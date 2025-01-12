@@ -1,4 +1,4 @@
-FROM ghcr.io/virtualstaticvoid/docker-r-shiny-map:latest
+FROM ghcr.io/tomcardoso/docker-r-shiny-map:latest
 
 COPY . /app
 

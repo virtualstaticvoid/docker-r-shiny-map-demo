@@ -1,0 +1,132 @@
+$ git push heroku main
+
+remote: Updated 8 paths from f1a9a0a        
+remote: Compressing source files... done.        
+remote: Building source:        
+remote: === Fetching app code        
+remote: 
+remote: === Building web (Dockerfile)        
+remote: 
+remote: Sending build context to Docker daemon  8.704kB        
+remote: 
+remote: 
+remote: Step 1/3 : FROM ghcr.io/virtualstaticvoid/docker-r-shiny-map:latest        
+remote: latest: Pulling from virtualstaticvoid/docker-r-shiny-map        
+remote: 6e3729cf69e0: Pulling fs layer        
+remote: 49e3e4a81f49: Pulling fs layer        
+remote: 2363063e1241: Pulling fs layer        
+remote: 0300bc31103c: Pulling fs layer        
+remote: a4ac1db2b215: Pulling fs layer        
+remote: 3e3366837fac: Pulling fs layer        
+remote: 665669f3d94c: Pulling fs layer        
+remote: 77a08ffe917d: Pulling fs layer        
+remote: 94472fb675b2: Pulling fs layer        
+remote: 59550ab234ee: Pulling fs layer        
+remote: 06037c2333e2: Pulling fs layer        
+remote: 4f4fb700ef54: Pulling fs layer        
+remote: d35cec109990: Pulling fs layer        
+remote: a4ac1db2b215: Waiting        
+remote: 3e3366837fac: Waiting        
+remote: 665669f3d94c: Waiting        
+remote: 77a08ffe917d: Waiting        
+remote: 94472fb675b2: Waiting        
+remote: 59550ab234ee: Waiting        
+remote: 06037c2333e2: Waiting        
+remote: 4f4fb700ef54: Waiting        
+remote: d35cec109990: Waiting        
+remote: 0300bc31103c: Waiting        
+remote: 49e3e4a81f49: Download complete        
+remote: 0300bc31103c: Download complete        
+remote: 6e3729cf69e0: Download complete        
+remote: a4ac1db2b215: Verifying Checksum        
+remote: a4ac1db2b215: Download complete        
+remote: 665669f3d94c: Verifying Checksum        
+remote: 665669f3d94c: Download complete        
+remote: 2363063e1241: Verifying Checksum        
+remote: 2363063e1241: Download complete        
+remote: 3e3366837fac: Verifying Checksum        
+remote: 3e3366837fac: Download complete        
+remote: 94472fb675b2: Verifying Checksum        
+remote: 94472fb675b2: Download complete        
+remote: 59550ab234ee: Verifying Checksum        
+remote: 59550ab234ee: Download complete        
+remote: 4f4fb700ef54: Verifying Checksum        
+remote: 4f4fb700ef54: Download complete        
+remote: 77a08ffe917d: Verifying Checksum        
+remote: 06037c2333e2: Verifying Checksum        
+remote: 06037c2333e2: Download complete        
+remote: 6e3729cf69e0: Pull complete        
+remote: d35cec109990: Verifying Checksum        
+remote: d35cec109990: Download complete        
+remote: 49e3e4a81f49: Pull complete        
+remote: 2363063e1241: Pull complete        
+remote: 0300bc31103c: Pull complete        
+remote: a4ac1db2b215: Pull complete        
+remote: 3e3366837fac: Pull complete        
+remote: 665669f3d94c: Pull complete        
+remote: 77a08ffe917d: Pull complete        
+remote: 94472fb675b2: Pull complete        
+remote: 59550ab234ee: Pull complete        
+remote: 06037c2333e2: Pull complete        
+remote: 4f4fb700ef54: Pull complete        
+remote: d35cec109990: Pull complete        
+remote: Digest: sha256:8aef04f11762d6e296f1bc08ab9a2e0c01ceb736939d67662136b69fee813147        
+remote: Status: Downloaded newer image for ghcr.io/virtualstaticvoid/docker-r-shiny-map:latest        
+remote:  ---> fc10bc260670        
+remote: Step 2/3 : COPY . /app        
+remote:  ---> 599f5d6d569e        
+remote: Step 3/3 : CMD ["/usr/bin/R", "--no-save", "--gui-none", "-f", "/app/run.R"]        
+remote:  ---> Running in df0d4ebd23e1        
+remote: Removing intermediate container df0d4ebd23e1        
+remote:  ---> 400c07883b5c        
+remote: Successfully built 400c07883b5c        
+remote: Successfully tagged 65e5f7f23378b6215d69a38e2237837438bcc55e:latest        
+remote: 
+remote: === Pushing web (Dockerfile)        
+remote: Tagged image "65e5f7f23378b6215d69a38e2237837438bcc55e" as "registry.heroku.com/murmuring-scrubland-75282/web"        
+remote: Using default tag: latest        
+remote: The push refers to repository [registry.heroku.com/murmuring-scrubland-75282/web]        
+remote: 7dcf59121acd: Preparing        
+remote: 71935b271a9f: Preparing        
+remote: 5f70bf18a086: Preparing        
+remote: 5f70bf18a086: Preparing        
+remote: 5f70bf18a086: Preparing        
+remote: 603350bbc0ec: Preparing        
+remote: 042858762dc3: Preparing        
+remote: 5161d0793773: Preparing        
+remote: 17e85d8e5385: Preparing        
+remote: 0ca2f5c386a1: Preparing        
+remote: 9eade86e5c84: Preparing        
+remote: 515a4498df83: Preparing        
+remote: 0825b22de78c: Preparing        
+remote: a53947bb1ce4: Preparing        
+remote: 01acf478142f: Preparing        
+remote: 6515074984c6: Preparing        
+remote: 0825b22de78c: Waiting        
+remote: a53947bb1ce4: Waiting        
+remote: 17e85d8e5385: Waiting        
+remote: 01acf478142f: Waiting        
+remote: 0ca2f5c386a1: Waiting        
+remote: 9eade86e5c84: Waiting        
+remote: 515a4498df83: Waiting        
+remote: 6515074984c6: Waiting        
+remote: 5161d0793773: Waiting        
+remote: 603350bbc0ec: Layer already exists        
+remote: 042858762dc3: Layer already exists        
+remote: 5f70bf18a086: Layer already exists        
+remote: 71935b271a9f: Layer already exists        
+remote: 5161d0793773: Layer already exists        
+remote: 17e85d8e5385: Layer already exists        
+remote: 0ca2f5c386a1: Layer already exists        
+remote: 9eade86e5c84: Layer already exists        
+remote: 515a4498df83: Layer already exists        
+remote: 0825b22de78c: Layer already exists        
+remote: a53947bb1ce4: Layer already exists        
+remote: 01acf478142f: Layer already exists        
+remote: 6515074984c6: Layer already exists        
+remote: 7dcf59121acd: Pushed        
+remote: latest: digest: sha256:32566d0ce1c6f5371f1b34f5cde40cf4e0abeacea7de2c48301deeec9c61b77a size: 3670        
+remote: 
+remote: Verifying deploy... done.        
+To https://git.heroku.com/xxxxxxxxx-yyyyyyyyy-75282.git
+ + 8ce6aec...367c845 main -> main

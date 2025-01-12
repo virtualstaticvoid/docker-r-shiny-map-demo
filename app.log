@@ -1,0 +1,38 @@
+$ heroko logs --tail
+
+2025-01-12T18:27:19.000000+00:00 app[api]: Build succeeded
+2025-01-12T18:27:19.283556+00:00 app[api]: Deploy 367c8456 by user virtualstaticvoid@gmail.com
+2025-01-12T18:27:19.283556+00:00 app[api]: Release v2 created by user virtualstaticvoid@gmail.com
+2025-01-12T18:27:36.175328+00:00 heroku[web.1]: Starting process with command `/usr/bin/R --no-save --gui-none -f /app/run.R`
+2025-01-12T18:27:36.932052+00:00 app[web.1]:
+2025-01-12T18:27:36.932089+00:00 app[web.1]: R version 4.2.2 Patched (2022-11-10 r83330) -- "Innocent and Trusting"
+2025-01-12T18:27:36.932089+00:00 app[web.1]: Copyright (C) 2022 The R Foundation for Statistical Computing
+2025-01-12T18:27:36.932090+00:00 app[web.1]: Platform: x86_64-pc-linux-gnu (64-bit)
+2025-01-12T18:27:36.932090+00:00 app[web.1]:
+2025-01-12T18:27:36.932090+00:00 app[web.1]: R is free software and comes with ABSOLUTELY NO WARRANTY.
+2025-01-12T18:27:36.932091+00:00 app[web.1]: You are welcome to redistribute it under certain conditions.
+2025-01-12T18:27:36.932091+00:00 app[web.1]: Type 'license()' or 'licence()' for distribution details.
+2025-01-12T18:27:36.932091+00:00 app[web.1]:
+2025-01-12T18:27:36.932091+00:00 app[web.1]: R is a collaborative project with many contributors.
+2025-01-12T18:27:36.932091+00:00 app[web.1]: Type 'contributors()' for more information and
+2025-01-12T18:27:36.932091+00:00 app[web.1]: 'citation()' on how to cite R or R packages in publications.
+2025-01-12T18:27:36.932092+00:00 app[web.1]:
+2025-01-12T18:27:36.932092+00:00 app[web.1]: Type 'demo()' for some demos, 'help()' for on-line help, or
+2025-01-12T18:27:36.932092+00:00 app[web.1]: 'help.start()' for an HTML browser interface to help.
+2025-01-12T18:27:36.932092+00:00 app[web.1]: Type 'q()' to quit R.
+2025-01-12T18:27:36.932092+00:00 app[web.1]:
+2025-01-12T18:27:37.358128+00:00 app[web.1]: ℹ Using R 4.2.2 (lockfile was generated with R 4.4.1)
+2025-01-12T18:27:37.360513+00:00 app[web.1]: - Project '~/' loaded. [renv 1.0.11]
+2025-01-12T18:27:37.795944+00:00 app[web.1]: - The project is out-of-sync -- use `renv::status()` for details.
+2025-01-12T18:27:37.836488+00:00 app[web.1]: > library(shiny)
+2025-01-12T18:27:38.241341+00:00 app[web.1]: >
+2025-01-12T18:27:38.241356+00:00 app[web.1]: > port <- Sys.getenv('PORT')
+2025-01-12T18:27:38.241600+00:00 app[web.1]: >
+2025-01-12T18:27:38.241602+00:00 app[web.1]: > shiny::runApp(
+2025-01-12T18:27:38.241616+00:00 app[web.1]: +   appDir = getwd(),
+2025-01-12T18:27:38.241624+00:00 app[web.1]: +   host = '0.0.0.0',
+2025-01-12T18:27:38.241628+00:00 app[web.1]: +   port = as.numeric(port)
+2025-01-12T18:27:38.241639+00:00 app[web.1]: + )
+2025-01-12T18:27:38.281676+00:00 app[web.1]:
+2025-01-12T18:27:38.281678+00:00 app[web.1]: Listening on http://0.0.0.0:27380
+2025-01-12T18:27:38.637009+00:00 heroku[web.1]: State changed from starting to up
